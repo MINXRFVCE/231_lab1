@@ -6,7 +6,7 @@
         <title>"Информация обо мне"</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <style>
-        p, h1, h2 {
+        p, h1, h2, ul {
             font-family: 'Times New Roman', Times, serif;
         }
 
@@ -16,18 +16,25 @@
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
         }
 
-        p {
+        p, ul {
             font-size: 16px;
             color: #333;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
 
         .center {
-            text-align: center; /* Выравнивание текста по центру */
+            text-align: center;
         }
 
         .right {
-            text-align: right; /* Выравнивание текста по правому краю */
+            text-align: right;
+        }
+
+        .image-container {
+            display: flex;
+        }
+        .image-container img {
+            width: 50%;
         }
         
         </style>
@@ -51,9 +58,16 @@
             <li>Завалил экзамен по вождению 6 раз...</li>
             <li>Участвовал в хакатоне в декабре 2023 года и занял с командой 3-е место</li>
             <li>Занимаюсь музыкой, вот <a href="https://band.link/minxrfvce" target="_blank">ссылка</a> на мой профиль</li>
+            <li>Закончил 11 классов в школе №8</li>
+            <li>Хожу на военную кафедру</li>
+            <li>Сделал этот сайт?</li>
         </ul>
 
-        <img src="IMG_20231217_140104.jpg" alt="Я" width="300" height="300" id="me">
+        <div class="image-container">
+            <img src="IMG_20231217_140104.jpg" alt="Я" width="400" height="400" id="me">
+        <img src="сертификат.png" alt="Я" width="400" height="400" id="cert">
+        </div>
+        
 
         <footer>
             <p>&copy; Спасибо за внимание!</p>
